@@ -69,61 +69,6 @@ src/
     └── utils.ts
 ```
 
-## 🪧 Deploy to Vercel
-
-The fastest way to put KalaSetu AI live in under 5 minutes.
-
-### Option A — One-click via dashboard (recommended)
-
-1. Push this repo to GitHub (already done if you cloned us).
-2. Go to [vercel.com/new](https://vercel.com/new) and **Import** the repo.
-3. Framework preset will auto-detect as **Next.js** — leave defaults.
-4. Add these environment variables in the **Environment Variables** panel:
-
-   | Key | Value | Required |
-   | --- | --- | --- |
-   | `GROQ_API_KEY` | from [console.groq.com/keys](https://console.groq.com/keys) | yes |
-   | `GROQ_MODEL` | `llama-3.3-70b-versatile` | optional |
-   | `NEXT_PUBLIC_FIREBASE_API_KEY` | your Firebase web key | optional |
-   | `NEXT_PUBLIC_FIREBASE_AUTH_DOMAIN` | `your-project.firebaseapp.com` | optional |
-   | `NEXT_PUBLIC_FIREBASE_PROJECT_ID` | your Firebase project ID | optional |
-   | `NEXT_PUBLIC_FIREBASE_STORAGE_BUCKET` | `your-project.appspot.com` | optional |
-   | `NEXT_PUBLIC_FIREBASE_MESSAGING_SENDER_ID` | your sender ID | optional |
-   | `NEXT_PUBLIC_FIREBASE_APP_ID` | your Firebase app ID | optional |
-
-5. Click **Deploy**. First build takes ~2 minutes. You'll get a URL like
-   `https://kalasetu-ai.vercel.app`.
-
-> 💡 Without Firebase env vars the app runs in **demo mode**: any email/password
-> signs you in (state stored in localStorage). Perfect for hackathon judging.
-
-### Option B — Vercel CLI
-
-```bash
-npm i -g vercel
-vercel login
-vercel              # first deploy: link / create project, follow prompts
-vercel --prod       # promote to production
-```
-
-When the CLI asks `Set up and deploy?` choose **Yes**, then accept defaults
-(scope = your account, link to existing project = No, project name =
-`kalasetu-ai`, code dir = `./`, modify settings = No).
-
-After the first deploy, set env vars:
-
-```bash
-vercel env add GROQ_API_KEY production
-vercel env add GROQ_MODEL production
-# (Firebase vars optional — repeat for each)
-vercel --prod
-```
-
-### Auto-deploy on every push
-
-Vercel automatically deploys every push to `main` to production, and every
-pull request gets a preview URL. No CI config needed.
-
 ## 🛣 Roadmap & Future Improvements
 
 KalaSetu AI is a hackathon-quality MVP. The vision is much larger — here's
