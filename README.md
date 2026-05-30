@@ -6,7 +6,6 @@ KalaSetu AI is an AI-powered marketplace that empowers India's master artisans t
 
 ## ✨ Features
 
-- 🎨 Stunning Indian-meets-modern landing page (warm terracotta + teal palette)
 - 🛍 Marketplace with category filters, search, sort, festival picks
 - 📦 Product detail pages with cultural stories, reviews, artisan profiles
 - 👤 Artisan story pages with AI-generated storytelling
