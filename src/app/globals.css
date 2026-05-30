@@ -1,0 +1,136 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+@import url("https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500;9..144,600;9..144,700;9..144,800&family=Plus+Jakarta+Sans:wght@300;400;500;600;700;800&display=swap");
+
+@layer base {
+  :root {
+    --background: 36 56% 96%;
+    --foreground: 22 25% 12%;
+
+    --card: 0 0% 100%;
+    --card-foreground: 22 25% 12%;
+
+    --popover: 0 0% 100%;
+    --popover-foreground: 22 25% 12%;
+
+    --primary: 21 76% 45%;
+    --primary-foreground: 0 0% 100%;
+
+    --secondary: 30 50% 92%;
+    --secondary-foreground: 22 25% 12%;
+
+    --muted: 30 30% 94%;
+    --muted-foreground: 22 12% 40%;
+
+    --accent: 173 78% 26%;
+    --accent-foreground: 0 0% 100%;
+
+    --destructive: 0 84% 60%;
+    --destructive-foreground: 0 0% 100%;
+
+    --border: 30 20% 88%;
+    --input: 30 20% 88%;
+    --ring: 21 76% 45%;
+
+    --radius: 0.85rem;
+  }
+
+  .dark {
+    --background: 22 25% 7%;
+    --foreground: 36 30% 92%;
+    --card: 22 22% 10%;
+    --card-foreground: 36 30% 92%;
+    --popover: 22 22% 10%;
+    --popover-foreground: 36 30% 92%;
+    --primary: 21 80% 55%;
+    --primary-foreground: 22 25% 7%;
+    --secondary: 22 18% 16%;
+    --secondary-foreground: 36 30% 92%;
+    --muted: 22 18% 14%;
+    --muted-foreground: 36 12% 65%;
+    --accent: 173 60% 40%;
+    --accent-foreground: 22 25% 7%;
+    --destructive: 0 70% 55%;
+    --destructive-foreground: 0 0% 100%;
+    --border: 22 18% 18%;
+    --input: 22 18% 18%;
+    --ring: 21 80% 55%;
+  }
+
+  * {
+    @apply border-border;
+  }
+  html,
+  body {
+    @apply bg-background text-foreground antialiased;
+    font-family: "Plus Jakarta Sans", system-ui, sans-serif;
+  }
+  h1,
+  h2,
+  h3,
+  h4 {
+    font-family: "Fraunces", Georgia, serif;
+    letter-spacing: -0.02em;
+  }
+}
+
+@layer components {
+  .container-page {
+    @apply mx-auto w-full max-w-7xl px-4 sm:px-6 lg:px-8;
+  }
+  .heading-display {
+    @apply font-display text-4xl font-bold leading-[1.05] sm:text-5xl lg:text-6xl;
+  }
+  .text-gradient-warm {
+    background: linear-gradient(90deg, #c9621d 0%, #dd7e3a 60%, #0e7a6e 100%);
+    -webkit-background-clip: text;
+    background-clip: text;
+    color: transparent;
+  }
+  .glass-card {
+    @apply rounded-2xl border border-white/40 bg-white/70 backdrop-blur-xl shadow-[0_10px_40px_-12px_rgba(168,77,20,0.15)];
+  }
+  .pill {
+    @apply inline-flex items-center gap-2 rounded-full border border-terracotta-200/70 bg-white px-3.5 py-1.5 text-xs font-medium text-terracotta-700 shadow-sm;
+  }
+  .ai-badge {
+    @apply inline-flex items-center gap-1.5 rounded-full bg-gradient-to-r from-terracotta-500 to-teal-500 px-3 py-1 text-[11px] font-semibold uppercase tracking-wide text-white shadow-md;
+  }
+  .craft-pattern {
+    background-image:
+      radial-gradient(circle at 25% 30%, rgba(201, 98, 29, 0.08) 0px, transparent 60px),
+      radial-gradient(circle at 75% 70%, rgba(14, 122, 110, 0.07) 0px, transparent 60px);
+  }
+}
+
+::selection {
+  background: #c9621d;
+  color: #fff;
+}
+
+/* Loader shimmer */
+.shimmer {
+  background: linear-gradient(
+    90deg,
+    rgba(255, 255, 255, 0) 0%,
+    rgba(255, 255, 255, 0.6) 50%,
+    rgba(255, 255, 255, 0) 100%
+  );
+  background-size: 800px 100%;
+  animation: shimmer 2s infinite linear;
+}
+
+/* Scrollbar */
+::-webkit-scrollbar {
+  width: 10px;
+  height: 10px;
+}
+::-webkit-scrollbar-thumb {
+  background: hsl(var(--border));
+  border-radius: 999px;
+}
+::-webkit-scrollbar-thumb:hover {
+  background: hsl(var(--primary));
+}
