@@ -4,6 +4,11 @@
 
 KalaSetu AI is an AI-powered marketplace that empowers India's master artisans to list, market and sell their handmade crafts globally — in their own language. Built with **Next.js 14**, **TypeScript**, **Tailwind CSS**, **Firebase** and **Groq AI**.
 
+## 🎥 Demo Video
+
+▶️ Watch the complete demo here:
+https://drive.google.com/file/d/1nodfU7d3UN7uAnFhbf0WsM1JFlDOO2TQ/view?usp=drive_link
+
 ## ✨ Features
 
 - 🎨 Stunning Indian-meets-modern landing page (warm terracotta + teal palette)
