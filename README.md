@@ -68,13 +68,6 @@ src/
     └── utils.ts
 ```
 
-## 🪧 Deploy to Vercel
-
-1. Push to GitHub.
-2. Import the repo on [vercel.com](https://vercel.com).
-3. Add `GROQ_API_KEY` and the Firebase env vars in project settings.
-4. Deploy.
-
 ## 📄 License
 
 This project is open source under the [MIT License](./LICENSE).
