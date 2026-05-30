@@ -3,6 +3,7 @@
 import * as React from "react";
 import Image from "next/image";
 import { SmartImage } from "@/components/smart-image";
+import { CraftIllustration } from "@/components/craft-illustration";
 import { useSearchParams } from "next/navigation";
 import { Filter, Search, Sparkles, SlidersHorizontal } from "lucide-react";
 import { Input } from "@/components/ui/input";
@@ -152,11 +153,10 @@ function MarketplaceContent() {
                                 key={p.id}
                                 className="relative aspect-square overflow-hidden rounded-2xl border border-white/15"
                             >
-                                <SmartImage
-                                    src={p.image}
-                                    alt={p.title}
-                                    fill
-                                    className="object-cover transition-transform hover:scale-110"
+                                <CraftIllustration
+                                    title={p.title}
+                                    category={p.category}
+                                    className="transition-transform hover:scale-110"
                                 />
                             </div>
                         ))}

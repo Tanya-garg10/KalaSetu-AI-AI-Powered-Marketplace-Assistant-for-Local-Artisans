@@ -4,6 +4,7 @@ import * as React from "react";
 import Link from "next/link";
 import Image from "next/image";
 import { SmartImage } from "@/components/smart-image";
+import { CraftIllustration } from "@/components/craft-illustration";
 import {
     ResponsiveContainer,
     AreaChart,
@@ -226,11 +227,9 @@ export default function DashboardPage() {
                                         <td className="p-3">
                                             <div className="flex items-center gap-3">
                                                 <div className="relative h-10 w-10 overflow-hidden rounded-lg">
-                                                    <SmartImage
-                                                        src={p.image}
-                                                        alt={p.title}
-                                                        fill
-                                                        className="object-cover"
+                                                    <CraftIllustration
+                                                        title={p.title}
+                                                        category={p.category}
                                                     />
                                                 </div>
                                                 <span className="line-clamp-1 font-medium">{p.title}</span>

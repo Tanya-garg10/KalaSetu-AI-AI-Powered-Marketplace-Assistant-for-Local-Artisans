@@ -5,6 +5,7 @@ import Image from "next/image";
 import Link from "next/link";
 import { notFound, useParams } from "next/navigation";
 import { SmartImage } from "@/components/smart-image";
+import { CraftIllustration } from "@/components/craft-illustration";
 import {
     Heart,
     ShoppingBag,
@@ -46,13 +47,9 @@ export default function ProductDetailPage() {
             <div className="mt-6 grid gap-10 lg:grid-cols-2">
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden rounded-3xl border border-border/60 bg-card">
-                    <SmartImage
-                        src={product!.image}
-                        alt={product!.title}
-                        fill
-                        fallbackKey={product!.category.toLowerCase().includes("bamboo") ? "bamboo" : (product!.category.toLowerCase() as any)}
-                        className="object-cover"
-                        priority
+                    <CraftIllustration
+                        title={product!.title}
+                        category={product!.category}
                     />
                     {product!.badge && (
                         <Badge variant="ai" className="absolute left-4 top-4">
