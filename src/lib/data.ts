@@ -2,11 +2,11 @@
 
 export const CATEGORIES: { name: Category; emoji: string; image: string }[] = [
     { name: "Pottery", emoji: "🏺", image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=900&q=80" },
-    { name: "Textiles", emoji: "🧵", image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=900&q=80" },
-    { name: "Paintings", emoji: "🎨", image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=900&q=80" },
-    { name: "Bamboo Crafts", emoji: "🎋", image: "https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&w=900&q=80" },
-    { name: "Jewelry", emoji: "💍", image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=900&q=80" },
-    { name: "Handicrafts", emoji: "🪔", image: "https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?auto=format&fit=crop&w=900&q=80" },
+    { name: "Textiles", emoji: "🧵", image: "https://images.unsplash.com/photo-1732381917488-39f31539cd4f?auto=format&fit=crop&w=900&q=80" },
+    { name: "Paintings", emoji: "🎨", image: "https://images.unsplash.com/photo-1719498481882-0ee699635b4e?auto=format&fit=crop&w=900&q=80" },
+    { name: "Bamboo Crafts", emoji: "🎋", image: "https://images.unsplash.com/photo-1764498675816-5595e17dfef9?auto=format&fit=crop&w=900&q=80" },
+    { name: "Jewelry", emoji: "💍", image: "https://images.unsplash.com/photo-1762686130435-897de4b26aac?auto=format&fit=crop&w=900&q=80" },
+    { name: "Handicrafts", emoji: "🪔", image: "https://images.unsplash.com/photo-1764015487936-ae5720d5b391?auto=format&fit=crop&w=900&q=80" },
 ];
 
 export const ARTISANS: Artisan[] = [
@@ -129,7 +129,7 @@ export const PRODUCTS: Product[] = [
         price: 3500,
         rating: 4.8,
         reviews: 96,
-        image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1732381917488-39f31539cd4f?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a2",
         badge: "Bestseller",
         description:
@@ -147,7 +147,7 @@ export const PRODUCTS: Product[] = [
         price: 850,
         rating: 4.7,
         reviews: 64,
-        image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1710552516885-92638d42a686?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a3",
         badge: "Trending",
         description:
@@ -166,7 +166,7 @@ export const PRODUCTS: Product[] = [
         originalPrice: 2750,
         rating: 4.9,
         reviews: 142,
-        image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1719498481882-0ee699635b4e?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a4",
         badge: "20% Off",
         description:
@@ -184,7 +184,7 @@ export const PRODUCTS: Product[] = [
         price: 1850,
         rating: 4.8,
         reviews: 71,
-        image: "https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1764498675816-5595e17dfef9?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a5",
         badge: "New",
         description:
@@ -202,7 +202,7 @@ export const PRODUCTS: Product[] = [
         price: 12500,
         rating: 5,
         reviews: 38,
-        image: "https://images.unsplash.com/photo-1583394838336-acd977736f90?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1697781826540-20cff4de8acd?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a6",
         badge: "AI Featured",
         description:
@@ -220,7 +220,7 @@ export const PRODUCTS: Product[] = [
         price: 450,
         rating: 4.6,
         reviews: 213,
-        image: "https://images.unsplash.com/photo-1605883705077-8d3d3cebe78c?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1662720868850-e60cefb03201?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a1",
         badge: "Trending",
         description:
@@ -238,7 +238,7 @@ export const PRODUCTS: Product[] = [
         price: 1650,
         rating: 4.8,
         reviews: 56,
-        image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1762686130435-897de4b26aac?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a3",
         description:
             "Cuttack tarakasi silver work bent into chand-bali drops. Each thread thinner than a human hair, drawn 28 times through diminishing dies.",
@@ -255,7 +255,7 @@ export const PRODUCTS: Product[] = [
         price: 4200,
         rating: 4.9,
         reviews: 47,
-        image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1719498481882-0ee699635b4e?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a4",
         badge: "AI Featured",
         description:
@@ -273,7 +273,7 @@ export const PRODUCTS: Product[] = [
         price: 980,
         rating: 4.7,
         reviews: 184,
-        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1764015487936-ae5720d5b391?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a1",
         badge: "Bestseller",
         description:
@@ -292,7 +292,7 @@ export const PRODUCTS: Product[] = [
         originalPrice: 3000,
         rating: 4.8,
         reviews: 91,
-        image: "https://images.unsplash.com/photo-1610030469983-98e550d6193c?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1697781826540-20cff4de8acd?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a2",
         badge: "20% Off",
         description:
@@ -345,7 +345,7 @@ export const PRODUCTS: Product[] = [
         price: 2150,
         rating: 4.7,
         reviews: 73,
-        image: "https://images.unsplash.com/photo-1611591437281-460bfbe1220a?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1653227907864-560dce4c252d?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a6",
         badge: "New",
         description:
