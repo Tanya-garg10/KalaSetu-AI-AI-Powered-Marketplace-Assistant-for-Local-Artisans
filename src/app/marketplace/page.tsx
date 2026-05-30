@@ -153,10 +153,12 @@ function MarketplaceContent() {
                                 key={p.id}
                                 className="relative aspect-square overflow-hidden rounded-2xl border border-white/15"
                             >
-                                <CraftIllustration
-                                    title={p.title}
-                                    category={p.category}
-                                    className="transition-transform hover:scale-110"
+                                <SmartImage
+                                    src={p.image}
+                                    alt={p.title}
+                                    fill
+                                    fallbackKey={p.category.toLowerCase().includes("bamboo") ? "bamboo" : (p.category.toLowerCase() as any)}
+                                    className="object-cover transition-transform hover:scale-110"
                                 />
                             </div>
                         ))}

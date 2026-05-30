@@ -227,9 +227,11 @@ export default function DashboardPage() {
                                         <td className="p-3">
                                             <div className="flex items-center gap-3">
                                                 <div className="relative h-10 w-10 overflow-hidden rounded-lg">
-                                                    <CraftIllustration
-                                                        title={p.title}
-                                                        category={p.category}
+                                                    <SmartImage
+                                                        src={p.image}
+                                                        alt={p.title}
+                                                        fill
+                                                        className="object-cover"
                                                     />
                                                 </div>
                                                 <span className="line-clamp-1 font-medium">{p.title}</span>

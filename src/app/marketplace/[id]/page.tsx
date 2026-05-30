@@ -47,9 +47,13 @@ export default function ProductDetailPage() {
             <div className="mt-6 grid gap-10 lg:grid-cols-2">
                 {/* Image */}
                 <div className="relative aspect-square overflow-hidden rounded-3xl border border-border/60 bg-card">
-                    <CraftIllustration
-                        title={product!.title}
-                        category={product!.category}
+                    <SmartImage
+                        src={product!.image}
+                        alt={product!.title}
+                        fill
+                        fallbackKey={product!.category.toLowerCase().includes("bamboo") ? "bamboo" : (product!.category.toLowerCase() as any)}
+                        className="object-cover"
+                        priority
                     />
                     {product!.badge && (
                         <Badge variant="ai" className="absolute left-4 top-4">

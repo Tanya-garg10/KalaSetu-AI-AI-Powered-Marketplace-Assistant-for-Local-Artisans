@@ -6,7 +6,7 @@ import type { Product } from "@/lib/types";
 import { ARTISANS } from "@/lib/data";
 import { Badge } from "./ui/badge";
 import { formatINR } from "@/lib/utils";
-import { CraftIllustration } from "./craft-illustration";
+import { SmartImage } from "./smart-image";
 
 const badgeStyle: Record<NonNullable<Product["badge"]>, string> = {
     "AI Featured": "bg-gradient-to-r from-terracotta-500 to-teal-500 text-white",
@@ -24,10 +24,13 @@ export function ProductCard({ product }: { product: Product }) {
             className="group relative block overflow-hidden rounded-2xl border border-border/60 bg-card transition-all hover:-translate-y-0.5 hover:shadow-xl hover:shadow-terracotta-500/10"
         >
             <div className="relative aspect-[4/5] overflow-hidden">
-                <CraftIllustration
-                    title={product.title}
-                    category={product.category}
-                    className="transition-transform duration-700 group-hover:scale-105"
+                <SmartImage
+                    src={product.image}
+                    alt={product.title}
+                    fill
+                    sizes="(max-width: 768px) 50vw, 25vw"
+                    fallbackKey={product.category.toLowerCase().includes("bamboo") ? "bamboo" : (product.category.toLowerCase() as any)}
+                    className="object-cover transition-transform duration-700 group-hover:scale-110"
                 />
                 {product.badge && (
                     <span

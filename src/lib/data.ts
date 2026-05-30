@@ -1,11 +1,11 @@
 ﻿import type { Artisan, Product, Review, Category } from "./types";
 
 export const CATEGORIES: { name: Category; emoji: string; image: string }[] = [
-    { name: "Pottery", emoji: "🏺", image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=900&q=80" },
-    { name: "Textiles", emoji: "🧵", image: "https://images.unsplash.com/photo-1732381917488-39f31539cd4f?auto=format&fit=crop&w=900&q=80" },
+    { name: "Pottery", emoji: "🏺", image: "https://images.unsplash.com/photo-1597825510535-8d713104b5e1?auto=format&fit=crop&w=900&q=80" },
+    { name: "Textiles", emoji: "🧵", image: "https://images.unsplash.com/photo-1732381914274-07e58b4f6dce?auto=format&fit=crop&w=900&q=80" },
     { name: "Paintings", emoji: "🎨", image: "https://images.unsplash.com/photo-1719498481882-0ee699635b4e?auto=format&fit=crop&w=900&q=80" },
     { name: "Bamboo Crafts", emoji: "🎋", image: "https://images.unsplash.com/photo-1764498675816-5595e17dfef9?auto=format&fit=crop&w=900&q=80" },
-    { name: "Jewelry", emoji: "💍", image: "https://images.unsplash.com/photo-1762686130435-897de4b26aac?auto=format&fit=crop&w=900&q=80" },
+    { name: "Jewelry", emoji: "💍", image: "https://images.unsplash.com/photo-1714733831162-0a6e849141be?auto=format&fit=crop&w=900&q=80" },
     { name: "Handicrafts", emoji: "🪔", image: "https://images.unsplash.com/photo-1764015487936-ae5720d5b391?auto=format&fit=crop&w=900&q=80" },
 ];
 
@@ -111,7 +111,7 @@ export const PRODUCTS: Product[] = [
         originalPrice: 1500,
         rating: 4.9,
         reviews: 128,
-        image: "https://images.unsplash.com/photo-1565193566173-7a0ee3dbe261?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1597825510535-8d713104b5e1?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a1",
         badge: "AI Featured",
         description:
@@ -129,7 +129,7 @@ export const PRODUCTS: Product[] = [
         price: 3500,
         rating: 4.8,
         reviews: 96,
-        image: "https://images.unsplash.com/photo-1732381917488-39f31539cd4f?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1732381914274-07e58b4f6dce?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a2",
         badge: "Bestseller",
         description:
@@ -202,7 +202,7 @@ export const PRODUCTS: Product[] = [
         price: 12500,
         rating: 5,
         reviews: 38,
-        image: "https://images.unsplash.com/photo-1697781826540-20cff4de8acd?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1706541185904-7a62722c5b93?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a6",
         badge: "AI Featured",
         description:
@@ -220,7 +220,7 @@ export const PRODUCTS: Product[] = [
         price: 450,
         rating: 4.6,
         reviews: 213,
-        image: "https://images.unsplash.com/photo-1662720868850-e60cefb03201?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1760630004439-18b3bbd826be?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a1",
         badge: "Trending",
         description:
@@ -238,7 +238,7 @@ export const PRODUCTS: Product[] = [
         price: 1650,
         rating: 4.8,
         reviews: 56,
-        image: "https://images.unsplash.com/photo-1762686130435-897de4b26aac?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1714733831162-0a6e849141be?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a3",
         description:
             "Cuttack tarakasi silver work bent into chand-bali drops. Each thread thinner than a human hair, drawn 28 times through diminishing dies.",
@@ -255,7 +255,7 @@ export const PRODUCTS: Product[] = [
         price: 4200,
         rating: 4.9,
         reviews: 47,
-        image: "https://images.unsplash.com/photo-1719498481882-0ee699635b4e?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1582555172866-f73bb12a2ab3?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a4",
         badge: "AI Featured",
         description:
@@ -292,7 +292,7 @@ export const PRODUCTS: Product[] = [
         originalPrice: 3000,
         rating: 4.8,
         reviews: 91,
-        image: "https://images.unsplash.com/photo-1697781826540-20cff4de8acd?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1458322493962-69c5a4ef7ddf?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a2",
         badge: "20% Off",
         description:
@@ -310,7 +310,7 @@ export const PRODUCTS: Product[] = [
         price: 5800,
         rating: 4.9,
         reviews: 29,
-        image: "https://images.unsplash.com/photo-1599643478518-a784e5dc4c8f?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1547887538-e3a2f32cb1cc?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a3",
         badge: "AI Featured",
         description:
@@ -328,7 +328,7 @@ export const PRODUCTS: Product[] = [
         price: 380,
         rating: 4.6,
         reviews: 156,
-        image: "https://images.unsplash.com/photo-1528323273322-d81458248d40?auto=format&fit=crop&w=1200&q=80",
+        image: "https://images.unsplash.com/photo-1606756790138-261d2b21cd75?auto=format&fit=crop&w=1200&q=80",
         artisanId: "a5",
         description:
             "Set of six woven bamboo coasters with hand-stitched cotton edging. Made by a youth collective in Assam who plant a bamboo seedling for every set sold.",

@@ -139,7 +139,7 @@ export default function AdminPage() {
                         {PRODUCTS.slice(0, 6).map((p) => (
                             <li key={p.id} className="flex items-center gap-3 py-3">
                                 <div className="relative h-12 w-12 overflow-hidden rounded-lg">
-                                    <CraftIllustration title={p.title} category={p.category} />
+                                    <SmartImage src={p.image} alt={p.title} fill className="object-cover" />
                                 </div>
                                 <div className="flex-1">
                                     <div className="text-sm font-semibold">{p.title}</div>
